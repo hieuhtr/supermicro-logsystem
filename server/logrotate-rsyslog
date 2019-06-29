@@ -1,0 +1,11 @@
+/var/log/logsystem/*/*.log
+{
+        rotate 7
+        daily
+        dateext
+        missingok
+        notifempty
+        postrotate
+                invoke-rc.d rsyslog rotate > /dev/null
+        endscript
+}
