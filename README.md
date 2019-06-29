@@ -1,15 +1,15 @@
-# supermicro logsystem
+<center> <h2>supermicro logsystem</h2> </center>
 
 ![](./asset/overview.png)
 
-Supermirco logsystem based on rsyslog that can adapt for any linux log files (system logs, application logs, ...)
+Supermirco logsystem is based on `rsyslog` that can adapt for any linux log files (system logs, application logs, ...)
 - Using minimal cpu, mem, io resources
 - Realtime update with easy debugging/performing because of plaintext
-- Core logic is based on `rsyslog` client-server architecture
+- Core logic is based on `rsyslog` client-server architecture, using `syslog` standard for message logging
 - Prevent dropping logs from client during `rsyslog` server outage
+- Separating each client (via hostname) and each service (via systemd unit)
 - Basic visualize via `nginx` static file serving, auto reload for fetching new logs on UI for every 30sec
 - Can integrate with bigger logging system (ELK, ...)
-- Separating each client (via hostname) and each service on each client (via systemd unit)
 
 Tree view of plaintext logs on `rsyslog-server`
 ```
