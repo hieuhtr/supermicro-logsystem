@@ -1,4 +1,4 @@
-<center> <h2>supermicro logsystem</h2> </center>
+<h2 align="center">supermicro logsystem</h2>
 
 ![](./asset/overview.png)
 
