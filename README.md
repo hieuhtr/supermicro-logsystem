@@ -2,7 +2,7 @@
 
 ![](./asset/overview.png)
 
-Supermirco logsystem is based on `rsyslog` that can adapt for any linux log files (system logs, application logs, ...)
+Supermicro logsystem is based on `rsyslog` that can adapt for any linux log files (system logs, application logs, ...)
 - Using minimal cpu, mem, io resources
 - Realtime update with easy debugging/performing because of plaintext
 - Core logic is based on `rsyslog` client-server architecture, using `syslog` standard for message logging
